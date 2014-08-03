@@ -431,6 +431,12 @@ form > div.required {height:30px;}
       height:30px;
 	  line-height:20px;
   }
+  			
+  #bookbutton1:hover
+	{
+	background-color: #333;
+	}
+			    
   .cbox-left{
 	 width:38%;
 	 float:left;
@@ -531,6 +537,16 @@ form > div.required {height:30px;}
 	 *margin-top:70px;
 	 _margin-top:20px;
   }
+  
+  #contentform1 .overlay-bg1
+  {
+  position:absolute;
+	height:100%;
+	width:100%;
+	top:0px;
+	left:0px;	
+  }
+  
   #contentform1
   {
 	 margin:0;
@@ -538,7 +554,7 @@ form > div.required {height:30px;}
 	 background:#b73533;
 	 z-index:99;
 	 width:700px;
-	 border:5px solid #fff;
+	 border:none;
 	 position:absolute;
 	 left:25%;
 	 top:50%;

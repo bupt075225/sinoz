@@ -250,8 +250,8 @@
 			{
 			display: inlin-block;
 			position: absolute;
-			width: 368px;
-			height: 114px;
+			width: 30%;
+			height: 65%;
 			top: 0px;
 			left: 0px;
 			margin: 16px;
@@ -276,7 +276,7 @@
 			display: inline-block;
 			position: absolute;
 			top: 16px;
-			left: 431px;	
+			left: calc(50% - 70px);	
 			}
 			
 			/*****form 样式****/
@@ -513,7 +513,7 @@
               picarr[0]  = "chengdu.jpg";
               textarr[0] = "Sinoz effectively bridges Chinese business culture and Australian business principles.";
               picarr[1]  = "perth.jpg";
-              textarr[1] = "Perth based Sinoz Consulting specializes in assisting Australian businesses approach, position and succeed in the Chinese market.";
+              textarr[1] = "Sinoz assists Australian companies succeed in China.";
               picarr[2]  = "slideshow3.jpg";
               textarr[2] = "Work with Sinoz and watch your business with China take off";
               picarr[3]  = "slideshow4.jpg";
@@ -538,8 +538,9 @@
           </div>
           <div id="contentform1" style="display:none;">
             <p id="error-message" style="display: none; color: #b73533; margin-left:20px;">Please ensure you've entered your name and a valid email</p>
+            <div class="overlay-bg1" onclick="showBookform()" ></div>
             <form class="contactform" name="contact-form" action="/contact/confirmation.jsp" onsubmit="return validateForm(this)" method="post">
-                <div class="input clearfix"><div style="float:left;width:150px;text-align:right;"><p>Name/Company: &nbsp;&nbsp;</p></div><div class="inputBox"><input type="text" name="name" style="border:1px solid #fff;"></div></div>
+                <div class="input clearfix"><div style="float:left;width:150px;text-align:right;"><p>Company Name: &nbsp;&nbsp;</p></div><div class="inputBox"><input type="text" name="name" style="border:1px solid #fff;"></div></div>
                 <div class="required"><p>(Required)</p></div>
                 <div class="input clearfix"><div style="float:left;width:150px;text-align:right;"><p>E-mail: &nbsp;&nbsp;</p></div><div class="inputBox"><input type="text" name="email" style="border:1px solid #fff;"></div></div>
                 <div class="required"><p>(Required)</p></div>
@@ -551,16 +552,22 @@
             </form>
           </div>
           <div id="contact-box1" lang="en">
-              <div class="cbox-left"><img id="bookbutton" src="book_consultation.jpg" style="cursor:pointer;" onclick="showBookform()" /></div>
-              <div class="cbox-middle"><img src="newsletter.jpg" /></div>
+              <div class="cbox-left">
+               <img id="bookbutton1" src="/book_consultation.jpg" style="cursor:pointer;" onclick="showBookform()" />
+              </div>
+              <div class="cbox-middle">
+                <a href="/reports_analysis/">
+                <img src="newsletter.jpg" />
+                </a>
+              </div>
               <div class="cbox-right">
               <form name="contact-form" class="regform" action="confirmation.jsp" onsubmit="return validateForm1(this)" method="post">
                   <div class="input clearfix"><div style="float:left;width:150px;text-align:right;"><p>Name/Company:&nbsp;</p></div><div class="inputBox"><input type="text" name="name" style="border:1px solid #fff;"></div></div>
                   <div class="input clearfix"><div style="float:left;width:150px;text-align:right;"><p>E-mail:&nbsp;</p></div><div class="inputBox"><input type="text" name="email" style="border:1px solid #fff;"></div></div>
-                  <input type="submit" value="Submit" class="submit">
+                  <input type="submit" value="Sign Up" class="submit">
               </form>
               <p class="cbox-desc" style="font-size:12pt;">
-                 to receive our China business insights <br/> newsletter and reports
+                 Free China Business Insights Newsletter & Reports
               </p>
               </div>
            </div>
