@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<script src="jquery.js"></script>
+<script language="javascript">
+  var s = 1;
+  function slideshow(){
+	 if(s==1){
+	   $("#slide1").fadeOut(300);
+	   $("#slide2").fadeIn(800);
+	   s=2;
+	 }else{
+	   $("#slide2").fadeOut(300);
+	   $("#slide1").fadeIn(800);
+	   s=1;
+	 }
+	 setTimeout("slideshow()",3000);
+  }
+  $(document).ready(function(){
+	 slideshow();
+  });
+</script>
+</head>
+
+<body>
+<div id="cobox" style="width:80%; margin:200px auto;height:200px; position:relative;">
+  <div id="slide1" style="width:100%; position:absolute;top:0;left:0;height:200px;background-color:#666; z-index:9"></div>
+  <div id="slide2" style="width:100%; position:absolute;top:0;left:0;height:200px;background-color:#093; z-index:5"></div>
+</div>
+</body>
+</html>
