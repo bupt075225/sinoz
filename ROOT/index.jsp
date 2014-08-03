@@ -312,10 +312,10 @@
 			form
 			{
 			width: 460px;
+			padding-top: 5px;
 			clear: both;
 			background:#b73533;
 			color:#fff;
-			padding-top:5px;
 			}
 			
 			form > div.input
@@ -356,23 +356,21 @@
 			{
 			border: none;
 			outline: none;
-			width: 240px;
+			width: 440px;
 			padding-left: 8px;
 			resize: none;
 			}
-			
+					
 			form > div > textarea
 			{
 			vertical-align: bottom;
 			}
-			.contactform .inputBox{width:300px;}
-			.contactform .inputBox input,
-			.contactform .inputBox textarea{width:300px;}
+
 			form > input
 			{
 			border: solid 1px #b73533;
-			width: 450px;
-			margin:5px;
+			width: 588px;
+			margin: 5px;
 			outline: none;
 			padding: 0px;
 			padding-top: 4px;
@@ -402,7 +400,7 @@
 			padding: 0px;
 			font-size:14px;
 			}
-			
+						
 			#contentform form
 			{
 			position: absolute;
@@ -410,15 +408,9 @@
 			top: 150px;
 			width: 600px;
 			padding: 16px;
-			background-color: #b73533;
-			
-			#contact-box form
-			{
-			display: inline-block;
-			position: absolute;
-			top: 16px;
+			background-color: #b73533;		
 			}
-			
+						
 			}
 		</style>
 		<link href="/style.css" rel="stylesheet" type="text/css">
@@ -471,14 +463,14 @@
             <p id="error-message" style="display: none; color: #b73533; margin-left:20px;">Please ensure you've entered your name and a valid email</p>
             <div class="overlay-bg" onclick="document.getElementById('contentform').style.display='none';"></div>
             <form class="contactform" name="contact-form" action="/contact/confirmation.jsp" onsubmit="return validateForm(this)" method="post">
-                <div class="input clearfix"><div style="float:left;"><p>Name/Company: &nbsp;&nbsp;</p></div><div class="inputBox"><input type="text" name="name" style="border:1px solid #fff;"></div></div>
+                <div class="input clearfix"><div style="float:left;"><p>Company Name: &nbsp;</p></div><div class="inputBox"><input type="text" name="name" style="border:1px solid #fff;"></div></div>
                 <div class="required"><p>(Required)</p></div>
-                <div class="input clearfix"><div style="float:left;"><p>E-mail: &nbsp;&nbsp;</p></div><div class="inputBox"><input type="text" name="email" style="border:1px solid #fff;"></div></div>
+                <div class="input clearfix"><div style="float:left;"><p>E-mail: &nbsp;</p></div><div class="inputBox"><input type="text" name="email" style="border:1px solid #fff;"></div></div>
                 <div class="required"><p>(Required)</p></div>
-                <div class="input clearfix"><div style="float:left;"><p>Mobile: &nbsp;&nbsp;</p></div><div class="inputBox"><input type="text" name="mobile" style="border:1px solid #fff;"></div></div>
-                <div class="input clearfix"><div style="float:left;"><p>Address: &nbsp;&nbsp;</p></div><div class="inputBox"><input type="text" name="address" style="border:1px solid #fff;"></div></div>
-                <div class="input clearfix"><div style="float:left;"><p>WeChat: &nbsp;&nbsp;</p></div><div class="inputBox"><input type="text" name="wechat" style="border:1px solid #fff;"></div></div>
-                <div class="input clearfix"><div style="height:80px;float:left;"><p>Comments: &nbsp;&nbsp;</p></div><div class="inputBox" style="height:80px;"><textarea type="text" name="comments" style="height:80px;-moz-height:60px;border:1px solid #fff;"></textarea></div></div>
+                <div class="input clearfix"><div style="float:left;"><p>Mobile: &nbsp;</p></div><div class="inputBox"><input type="text" name="mobile" style="border:1px solid #fff;"></div></div>
+                <div class="input clearfix"><div style="float:left;"><p>Address: &nbsp;</p></div><div class="inputBox"><input type="text" name="address" style="border:1px solid #fff;"></div></div>
+                <div class="input clearfix"><div style="float:left;"><p>WeChat: &nbsp;</p></div><div class="inputBox"><input type="text" name="wechat" style="border:1px solid #fff;"></div></div>
+                <div class="input clearfix"><div style="height:80px;float:left;"><p>Comments: &nbsp;</p></div><div class="inputBox" style="height:80px;"><textarea type="text" name="comments" style="height:80px;-moz-height:60px;border:1px solid #fff;"></textarea></div></div>
                 <input type="submit" value="Submit" class="submit">
             </form>
           </div>

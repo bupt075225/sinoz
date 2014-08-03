@@ -1526,7 +1526,7 @@ img{border:none;}
   }
   .contactform .inputBox{width:60%;}
   #contentform .contactform{
-     width:calc(100% - 16px);
+   width:calc(100% - 16px);
 	 max-width:460px;
 	 margin:0 auto;
 	 border:5px solid #fff;
